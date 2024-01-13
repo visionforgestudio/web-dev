@@ -5,6 +5,10 @@
     /* Setting display to flex */
 
     display: flex;
+
+    /* Container will only take the rquired space */
+    
+    display: inline-flex;
     
     /* By default flex direction is row(main axis - left to right) (cross axis - top to bottom) */
 
