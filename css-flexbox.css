@@ -16,18 +16,74 @@
 
     flex-direction: column;
 
-    
+    /* Flex wrap property allows elements to go the next line when there is not enough space(By default it is nowrap) */
+
+    flex-wrap: wrap;
+    /* wrap-reverse will reverse the flow in next line(for eg right to left instead of left to right) */
+    flex-wrap: wrap-reverse; 
+
+    /* Justify content sets the arrangment of items in along main axis  */
+    /* There are many options for it but these ones are mostly used  */
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+
+    /* Align item is used to set the position of items in cross-axis */
+    /* Again, there are many options but these ones are most popular ones  */
+    /* Note:- Align item might not work as intended if flex-wrap is set to wrap  */
+    align-items: center;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: stretch;
+
+    /* When flex-wrap is set to wrap  */
+    align-content: center;
 }
 
 
-/* For Children */
+/* For Child */
 
-.children{
+.child{
 
     /* To set size of all children along main axis */
 
     flex-basis: 100px;
+    /* auto will adjust according to the size of content */
+    flex-basis: auto; 
 
-    
+    /* To change the order of element(By default every child has order of 0, the highest order goes to the right side) */
+
+    order: 1;
+
+    /* Justify-self and align-self is used to do same thing as above just to the specific item not to all  */
+    justify-self: flex-start;
+    align-self: center;
+
+    /* When flex-grow is 1, it will grow from minimum width to until the container is filled  */
+    flex-grow: 1;
+
+    /* If flex-shrink is 1, then it will not fill the container but it will shrink to minimum possibality  */
+    flex-shrink: 1;
+
+    /* When both grow and shrink are 1, it will grow to take maximum space and shrink to minimum possibality */
+    /* In this case, flex basis is ignored */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0; /*for equal width*/
+
+    /* Shorthand -  */
+    flex: 1 1 0; /*grow shrink basis*/
+    /* or just  */
+    flex: 1;
+
+
 
 }
+
+/* Priority of flex sizing */
+/* Content width < Width < flex-basis < min-width/max-width */
+
+

@@ -1,0 +1,21 @@
+/* For container or parent */
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr; /*two columns with ratio 1:2 */
+    grid-template-rows: 1fr 1fr; /*two rows with ratio 1:1 */
+    gap: 10px;
+
+    grid-template-columns: 100px auto; /*second column will shrink and grow to take full space*/
+
+    grid-template-columns: 100px minmax(400px,800px); /*second column min width and max width*/
+
+    grid-template-columns: repeat(2, 100px); /*Repeat 100px 2 times*/
+
+    grid-auto-rows: 100px; /*Any row that is added afterwards, that is not initially defined*/
+
+
+}
+
+/* By defult grid container will try to take all available width and required height */
+
