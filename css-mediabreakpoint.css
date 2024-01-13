@@ -1,0 +1,23 @@
+/* For Mobile Devices */
+
+@media (min-width: 319px) and (max-width: 480px){
+
+}
+
+/* For iPads and Tablets */
+
+@media (min-width: 481x) and (max-width: 1200px){
+
+}
+
+/* For Laptops */
+
+@media (min-width: 1201px) and (max-width: 1600px){
+
+}
+
+/* For Desktops */
+
+@media (min-width: 1601px){
+
+}
