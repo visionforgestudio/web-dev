@@ -1,0 +1,29 @@
+/* For Parent(Container) Styling */
+
+.parent{
+
+    /* Setting display to flex */
+
+    display: flex;
+    
+    /* By default flex direction is row(main axis - left to right) (cross axis - top to bottom) */
+
+    /* To set flex-direction to column(main axis - top to bottom) (cross axis - left to right) */
+
+    flex-direction: column;
+
+    
+}
+
+
+/* For Children */
+
+.children{
+
+    /* To set size of all children along main axis */
+
+    flex-basis: 100px;
+
+    
+
+}
